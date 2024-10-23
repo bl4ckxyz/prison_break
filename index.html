@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prison Break</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/x-icon" href="img/jail.ico">
+</head>
+
+<body>
+  <header class="cabeçalho">
+    <div class="container">
+      <input type="checkbox" id="menu" class="container__botao">
+      <label for="menu" class="container__rotulo">
+        <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+      </label>
+      <img src="img/Prison_Break_logo.png" alt="Logo da Alurabooks" class="container__imagem2">
+
+      <ul class="opções">
+        <input type="checkbox" id="opções-menu" class="opções__botão" />
+        <label for="opções-menu" class="opções__rotulo">
+          <li class="opções__item">TEMPORADAS</li>
+        </label>
+
+        <ul style="text-align: center;" class="lista-menu">
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">primeira</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">segunda</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">terceira</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">quarta</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">quinta (última)</a>
+          </li>
+        </ul>
+      </ul>
+
+    </div>
+    <div class="container">
+      <a href="#"><img src="img/Favoritos.svg" alt="Meus favoritos"
+          class="container__imagem container__imagem-transparente"></a>
+      <a href="https://geekprank.com/hacker/" class="container__link">
+        <img src="img/algema.png" alt="Meu perfil" class="container__imagem">
+      </a>
+    </div>
+  </header>
+
+  <section class="banner">
+    <h2 class="banner__titulo">Qual capítulo você quer uma sinopse?</h2>
+    <p class="banner__texto">*Alerta de spoiler!</p>
+    <input type="search" class="banner__pesquisa" placeholder="Temporada 3 episódio 5">
+  </section>
+
+  <section class="carrossel">
+    <h2 class="carrossel__titulo">Conheça os personagens principais</h2>
+
+    <div class="carrossel__container">
+      <!-- Slider main container -->
+      <div class="swiper">
+
+        <div class="swiper-pagination"></div>
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide"><img src="img/Michael.svg"></div>
+          <div class="swiper-slide"><img src="img/LinkB.svg"></div>
+          <div class="swiper-slide"><img src="img/Sucre.svg"></div>
+          <div class="swiper-slide"><img src="img/Cnote.jpg"/></div>
+          <div class="swiper-slide"><img src="img/Abruzzi.svg"/></div>
+          <div class="swiper-slide"><img src="img/DraSara.svg"/></div>
+        </div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+      </div>
+
+      <div class="card">
+        <div class="card__descrição">
+          <div class="descrição">
+            <img src="img/Estrelinhas.svg" alt="Avaliação 5 estrelas">
+            <h3 class="descrição__titulo">Assista também...</h3>
+            <h2 class="descrição__titulo-livro">Vis a Vis</h2>
+            <p class="descrição__texto">
+              Manipulada pelo homem por quem se apaixonou, Macarena comete um crime e é condenada à prisão. Assim, ela precisa aprender a sobreviver em um novo e violento mundo.
+            </p>
+          </div>
+          <img src="img/VisaVis.svg" class="descrição__imagem"/></div>
+        <div class="card__botões">
+          <a href="https://www.netflix.com/title/80060093" class="botões__ancora">Saiba mais</a>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section class=”carrossel”>
+    <h2 class="carrossel__titulo">Personagens mais odiados pelo público</h2>
+
+    <div class="carrossel__container">
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide"><img src="img/Mahone.svg"></div>
+          <div class="swiper-slide"><img src="img/Belick.svg"></div>
+          <div class="swiper-slide"><img src="img/Paul.jpg"></div>
+          <div class="swiper-slide"><img src="img/Tbag.svg"></div>
+          <div class="swiper-slide"><img src="img/Gretchen.jpg"></div>
+          <div class="swiper-slide"><img src="img/Lechero.jpg"></div>
+        </div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+
+      <div class="card">
+        <!-- 1º linha -->
+        <div class="card__descrição">
+          <!-- 1º coluna -->
+          <div class="descrição">
+            <img src="img/Estrelinhas.svg" alt="Avaliação 5 estrelas">
+            <h3 class="descrição__titulo">Para ficar preso na TV...</h3>
+            <h2 class="descrição__titulo-livro">La Casa de Papel</h2>
+            <p class="descrição__texto">Oito ladrões se trancam com reféns na Casa da Moeda da Espanha. Seu líder manipula a polícia para realizar um plano que pode ser o maior roubo da história ou uma missão em vão.
+            </p>
+          </div>
+          <!-- 2º coluna -->
+          <img src="img/Escritora.svg" class="descrição__imagem">
+        </div>
+
+        <!-- 2º linha -->
+        <div class="card__botões">
+          <!-- 1º coluna -->
+          <!-- 2º coluna -->
+          <a href="#" class="botões__ancora">Saiba mais</a>
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+
+  <section class="tópicos">
+    <h2 class="tópicos__titulo">Confira a biografia de cada autor</h2>
+    <ul class="tópicos__lista">
+      <li class="tópicos__item"><a href="#" class="tópicos__link">Wentworth Miller</a></li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Dominic Purcell</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Sarah Wayne Callies</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Robert Knepper</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Amaury Nolasco</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Paul Adelstein</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Wade Williams</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Rockmond Dunbar</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">William Fichtner</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Peter Stormare</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Jodi Lyn O'Keefe</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Robert Wisdom</a>
+      </li>
+    </ul>
+  </section>
+
+  <section class="contato">
+    <div class="contato__descrição">
+      <h2 class="contato__titulo2">Fique por dentro das notícias!</h2>
+      <p class="contato__texto2">
+        Atualizações de novos episódios, filmes e novidades dos artistas.
+      </p>
+    </div>
+    <input type="email" placeholder="        Cadastre seu e-mail" class="contato__email">
+  </section>
+
+  <hr />
+
+  <footer class="rodapé">
+    <h2 class="rodapé__titulo">Grupo Prison Break</h2>
+    <ul class="lista-rodapé">
+      <li class="lista-rodapé__titulo">Assista já!</li>
+      <li class="lista-rodapé__item">
+      <li class="lista-rodapé__item">
+        <img  style="width: 50px; height: auto;" src="img/netflix.png" alt="Logo da Casa do Código" />
+        <a href="https://www.netflix.com/title/70140425" class="lista-rodapé__link">Netflix</a>
+      </li>
+    </ul>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper(".swiper", {
+      spaceBetween: 10,
+      slidesPerView: 3,
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+      },
+    });
+  </script>
+</body>
+
+</html>
